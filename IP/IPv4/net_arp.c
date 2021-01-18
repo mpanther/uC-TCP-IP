@@ -3781,7 +3781,7 @@ static  void  NetARP_CacheRenewTimeout (void  *p_cache_timeout)
         timeout_tick = NetARP_ReqTimeoutRenew_tick;
         CPU_CRITICAL_EXIT();
 
-        fcnt         = NetARP_CacheRenewTimeout;
+        fcnt         = NetARP_CacheReqTimeout;
         tx_req       = DEF_YES;
 
     } else {
